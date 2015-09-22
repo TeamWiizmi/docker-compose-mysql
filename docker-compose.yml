@@ -3,4 +3,4 @@ mysql:
   container_name: mysql
   restart: always
   ports:
-    - '3306:3306'
+    - '127.0.0.1:3306:3306'
