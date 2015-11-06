@@ -1,5 +1,0 @@
-mysql:
-  extends: 
-    file: docker-compose.yml
-    service: mysql
-  env_file: .env.production

@@ -1,9 +1,0 @@
-mysql:
-  extends: 
-    file: docker-compose.yml
-    service: mysql
-  volumes:
-    - ./conf/my-sm.cnf:/etc/mysql/my.cnf
-    - /home/docker/containers/mysql/data:/var/lib/mysql
-  environment:
-    MYSQL_ROOT_PASSWORD: root
