@@ -1,16 +1,9 @@
-mysql_data:
-  image: busybox:latest
-  container_name: mysql_data
-  command: /bin/echo
-  volumes:
-    - /var/lib/mysql
-
 mysql:
   image: mysql:latest
   container_name: mysql
   ports:
     - '127.0.0.1:3306:3306'
-  volumes_from:
-    - mysql_data
+  volumes:
+    - 'mysql_data:/var/lib/mysql'
   environment:
     - MYSQL_ROOT_PASSWORD=root
