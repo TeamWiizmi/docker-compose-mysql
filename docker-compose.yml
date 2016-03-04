@@ -9,7 +9,8 @@ services:
     volumes:
       - 'data:/var/lib/mysql'
     env_file: .env.dev
+    hostname: mysql
+    network_mode: "bridge"
 
 volumes:
-  data:
-    driver: local
+  data: {}
