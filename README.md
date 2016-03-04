@@ -15,4 +15,5 @@ docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 # Ensure you have docker-machine installed
 eval "$(docker-machine env your_machine_name)"
 ./backup-all-db.sh
+./backup-db.sh db_name
 ```
