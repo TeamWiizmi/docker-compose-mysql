@@ -7,7 +7,7 @@ docker-compose up -d
 ## Run it in production enviroment
 ```sh```
 cp .env.dev .env.production
-docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+docker-compose -f docker-compose.prod.yml up -d
 ```
 
 ## Backup your databases
